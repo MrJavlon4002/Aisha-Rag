@@ -5,7 +5,7 @@ client = Groq(api_key = groq_api_key)
 
 
 # model = "llama3-groq-8b-8192-tool-use-preview" # bad in uzbek
-# model = "gemma2-9b-it" # very clear analysis but problem in gender
+# model = "gemma2-9b-it" # very clear analysis
 # model = "llama-3.2-11b-text-preview" # good in gender and normal analysis
 # model = "mixtral-8x7b-32768" # bad in uzbek
 

@@ -17,11 +17,11 @@ def perform_analysis(conversation, task_type):
         "customer_type": f"Classify the customer as 'Yangi' (new) or 'Eski' (old) based on the following conversation. Respond with either 'Yangi' or 'Eski'. \nConversation: {conversation}",
         "gender": f"Based on the conversation, classify the customer's GENDER: 'Erkak' (Male), 'Ayol' (Female), or 'Undefined'. Reply only with 'Erkak' or 'Ayol' or 'Undefined'. \nConversation: {conversation}",
         "sentiment": f"Analyze the sentiment of the job-related conversation and should be in UZBEK Language. Provide the response as follows: \nkayfiyat: ijobiy, salbiy, or neytral \nsabab: brief reason for this sentiment in uzbek. \nConversation: {conversation}",
-        "main_topic": f"Identify the main topic of the call between the customer and staff in UZBEK Language. Respond with only the main topic. \nConversation: {conversation}",
-        "summary": f"Provide a really short, clear, and detailed summary of the conversation in UZBEK Language! Keep your response under 3 sentences and just return the result. \nConversation: {conversation}"
+        "main_topic": f"Identify the main topic of the call between the customer and staff. Respond with only the main topic. You have to answer in in UZBEK Language. \nConversation: {conversation}",
+        "summary": f"Provide a really short, clear, and detailed summary in UZBEK Language of the conversation! Keep your response under 3 sentences and just return the result. \nConversation: {conversation}"
     }
     
-    return novitaai.generate_text(messages[task_type])
+    return togetherai.generate_text(messages[task_type])
 
 with gr.Blocks() as iface:
     txt_input = gr.File(type="filepath", label="Upload Text File (.txt)", file_types=[".txt"])
