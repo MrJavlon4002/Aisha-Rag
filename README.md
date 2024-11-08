@@ -9,6 +9,7 @@ API providerlari orasi 4 ta eng optimallarini sinab ko'rdik:
 2. Open AI
 3. Together AI
 4. Novita AI
+
 Yuqorda keltirilgan providerlarning bir biridan asosiy farqi bu ishlatilinayotgan modellarning narxlarni, shuning bir nechtasida boshqalarda bo'lmagan modellar ham bor.
 
 ### Modellar
